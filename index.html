@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>BMX.VHS</title>
     <style>
-    .responsive {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+    @media only screen and (min-width: 768px) {
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
     }
     </style>
   </head>
   <body>
-    <img src="jesse.jpg" class="responsive">
+    <img src="jesse.jpg" class="center">
     <br>
-    <img src="norfla.jpg" class="responsive">
+    <img src="norfla.jpg" class="center">
   </body>
 </html>
